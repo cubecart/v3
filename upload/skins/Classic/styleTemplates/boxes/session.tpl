@@ -1,0 +1,11 @@
+<!-- BEGIN: session -->
+
+<!-- BEGIN: session_false -->
+	<span class="txtSession">{LANG_WELCOME_GUEST} [</span><a href="index.php?act=login&amp;redir={VAL_SELF}" class="txtSession">{LANG_LOGIN}</a> <span class="txtSession">|</span> <a href="cart.php?act=reg&amp;redir={VAL_SELF}" class="txtSession">{LANG_REGISTER}</a><span class="txtSession">]</span>
+<!-- END: session_false -->
+
+<!-- BEGIN: session_true -->
+	<span class="txtSession">{LANG_WELCOME_BACK} {TXT_USERNAME} [</span><a href="index.php?act=logout" class="txtSession">{LANG_LOGOUT}</a> <span class="txtSession">|</span> <a href="index.php?act=account" class="txtSession">{LANG_YOUR_ACCOUNT}</a><span class="txtSession">]</span>
+<!-- END: session_true -->
+
+<!-- END: session -->

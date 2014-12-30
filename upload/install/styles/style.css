@@ -1,0 +1,105 @@
+body { 
+	background-color: #666666; 
+}
+.submit { 
+	background-color: #0B70CE; 
+	border: 1px solid #000000; 
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 12px; 
+	color: #FFFFFF; 
+	font-weight: bold; 
+}
+.main { 
+	margin: auto; 
+	width: 550px; 
+	border: 2px solid #cccccc; 
+	background-color:#FFFFFF; 
+	font-family:Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 11px; color: #000000;
+}
+.mainPad { 
+	padding-left: 20px; 
+	padding-right: 20px; 
+}
+.subTitle { 
+	font-size: 16px; 
+	color: #0971CE; 
+	font-weight: bold; 
+	padding-top: 5px; 
+	padding-bottom: 5px; 
+} 
+.blueHead { 
+	background-color: #020E72; 
+	font-weight: bold; 
+	color: #ffffff; 
+}
+.formTable {
+	border: 1px solid #020E72;
+}
+.license { 
+	margin: auto; 
+	overflow:auto; 
+	width: 485px; 
+	height: 135px; 
+	border: 1px solid #CCCCCC; 
+	padding: 3px; 
+}
+.borderBot { 
+	border-bottom: 1px solid #020E72; 
+}
+.greenTxt { 
+	color: green; 
+}
+.redTxt { 
+	color: red; 
+}
+.errorBar { 
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-weight: bold; 
+	color: #050F72; 
+	background-color: #FFCECE; 
+	border: 1px solid #FF0000; 
+	padding: 2px;
+}
+.infoBar { 
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-weight: bold; 
+	color: #050F72; 
+	background-color: #CEDFFF; 
+	border: 1px solid #050F72; 
+	padding: 2px; 
+}
+.textbox { 
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	color: #000000; 
+	font-size: 11px; 
+	background-color: #FFFFFF; 
+	border: 1px solid #A5ACB2; 
+}
+body,td,th {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+}
+a { 
+	color: #050F72; 
+	text-decoration: none; 
+}
+li { 
+	list-style-type: square; 
+	list-style-position: inside; 
+	padding-top: 10px;
+}
+.progressOn { 
+	background-color: #020E72; 
+	font:Arial, Helvetica, sans-serif; 
+	font-size: 10px; 
+	color:#FFFFFF; 
+	text-align: center; 
+}
+.progressOff { 
+	background-color: #CCCCCC; 
+	font:Arial, Helvetica, sans-serif; 
+	font-size: 10px; color:#FFFFFF; 
+	text-align: center; 
+}

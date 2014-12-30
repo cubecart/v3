@@ -1,0 +1,126 @@
+body {
+	margin: 5px;
+	background-color: #A5A5A5;
+	background-attachment: scroll;
+	background-image: url(../styleImages/backgrounds/pageBg.jpg);
+	background-repeat: repeat-x;
+	background-position: top;
+}
+#pageSurround {
+	width: 748px;
+	margin: 0px auto;
+	padding: 5px;
+	border: 2px solid #333333;
+	background-color: #FFFFFF;
+	background-image: url(../styleImages/backgrounds/contentBg.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;	
+}
+#topHeader {
+	text-align: right;
+	height: 36px;
+	margin-bottom: 20px;
+	padding-right: 0px;
+	padding-top: 68px;	
+}
+.boxTitleLeft, .boxTitleRight {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 75%;
+	color: #FFFFFF;
+	background-color: #031074;
+	background-image: url(../styleImages/backgrounds/boxTitleBg.gif);
+	height: 15px;
+	border-top: 1px solid #000000;
+	border-left: 1px solid #000000;
+	border-right: 1px solid #000000;
+	padding-left: 5px;
+}
+.boxContentLeft, .boxContentRight {
+	border: 1px solid #000000;
+	background-color: #EBEDFE;
+	padding-left: 5px;
+	margin-bottom: 10px;
+	padding-top: 3px;
+	padding-bottom: 5px;
+}
+.colLeft {
+	position: relative;
+	left: 0px;
+	width: 160px; 
+	padding-left: 15px;
+	padding-right: 5px;
+	float: left;
+}
+.colMid {
+	position: relative;
+	width: 403px;
+	float: left;
+}
+.colRight {
+	position: relative;
+	width: 160px; 
+	padding-left: 5px;
+	right: 0px;
+	float: right;
+}
+.boxContent {
+	border: 1px solid #000000;
+	padding: 3px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 75%;
+	color: #333333;
+	background-color: #FFFFFF;
+	margin-bottom: 5px;
+}
+/* CHECKOUT PAGES */
+.colLeftCheckout {
+	position: relative;
+	left: 0px;
+	width: 160px; 
+	padding-left: 15px;
+	padding-right: 5px;
+	float: left;
+}
+.colMainCheckout {
+	position: relative;
+	width: 568px;
+	float: left;
+}
+/* END CHECK OUT PAGES */
+.siteDocs {
+	text-align:center;
+	margin-top: 10px;
+}
+.pagination {
+	text-align: right;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+#subCats {
+	background-color: #EBEDFE;
+	text-align: center;
+	border: 1px solid #C9CEFC;
+	margin: 0px;
+	padding: 3px;
+	float: left;
+	width: 387px;
+}
+.subCat {	
+	text-align: center;
+	padding: 8px;
+	float: left;
+	width: 110px;
+	height: 50px;
+}
+.regSep{
+	padding: 10px 0px 10px 0px;
+	margin: 10px 0px 10px 0px;
+	border-top: 1px solid #cccccc;
+	border-bottom: 1px solid #cccccc;
+}
+.latestProds {
+	float: left;
+	text-align: center;
+	width: 131px;
+	height: 120px;
+}

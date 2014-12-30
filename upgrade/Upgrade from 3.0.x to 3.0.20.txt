@@ -1,0 +1,42 @@
+/////////////////////////////
+// CubeCart 3.0.x to 3.0.18
+// UPGRADE INSTRUCTIONS
+/////////////////////////////
+
+PLEASE TAKE A FULL BACKUP OF YOUR CURRENT SITE FILES AND 
+DATABASE DUMP BEFORE PROCEEDING WITH THE UPGRADE PROCESS
+
+READ THIS DOCUMENT IN FULL BEFORE STARTING
+
++------------------------------------------------
+| IF YOU ARE UPGRADING FROM 3.0.x - 3.0.18
++------------------------------------------------
+a. 	Take a FULL backup of the database and site files.
+
+b.	Upload every file from the uploads folder over your existing files
+	with exception to the ones listed below:
+
+	includes/global.inc.php
+	install/
+	language/*/home.inc.php
+
+c.	You then need to run the upgrade.php scripts (if there are any). To 
+	do this you need to know which version you were running previously. 
+	Have a look in the /upgrade/scripts/ folder to see if there are any 
+	relevant ones. If so start with the oldest one and copy it to the root 
+	folder of your store. Run this file in your browser and follow the 
+	on screen instructions. Repeat this process overwriting each upgrade.php 
+	script at a time until there are no more.
+
+	e.g. http://www.example.com/store/upgrade.php
+
+d. 	Your store should have been upgraded.
+
+e. 	You may need to reapply any modifications you have made.	
+
++------------------------------------------------
+| Upgrade complete.
++------------------------------------------------
+
+Please note that we are working to improve the upgrade facility in the next 
+major release which is still under heavy development.

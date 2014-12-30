@@ -1,0 +1,634 @@
+<html><head>
+<META http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<style>
+/* Default heading font (outside of tables) */
+body { font-family: sans-serif; font-size: 11pt; }
+
+td { vertical-align: top; padding-left: 4px; padding-right: 4px; }
+
+/* File Difference Report styles - Color */
+table.fc { border-top: 1px solid Black; border-left: 1px solid Black; width: 100%; font-family: monospace; font-size: 10pt; }
+
+tr.secBegin td { border-left: none; border-top: none; border-right: 1px solid Black; }
+tr.secMiddle td { border-left: none; border-top: none; border-right: 1px solid Black; }
+tr.secEnd td { border-left: none; border-top: none; border-bottom: 1px solid Black; border-right: 1px solid Black; }
+tr.secAll td { border-left: none; border-top: none; border-bottom: 1px solid Black; border-right: 1px solid Black; }
+tr.secSubEnd td { border-left: none; border-top: none; border-bottom: 1px solid Gray; border-right: 1px solid Black; }
+tr.secSubAll td { border-left: none; border-top: none; border-bottom: 1px solid Gray; border-right: 1px solid Black; }
+tr.secGap td { font-size: 4px; border-left: none; border-top: none; border-bottom: 1px solid Black; border-right: 1px solid Black; }
+
+td.LineNum { text-align: right; }
+td.LineRange { font-family: sans-serif; }
+td.SubLineRange { font-family: sans-serif; border-bottom: none; }
+
+td.AlignLeft { text-align: left; white-space: nowrap; }
+td.AlignRight { text-align: right; white-space: nowrap; }
+td.AlignCenter { text-align: center; white-space: nowrap; }
+td.Caption { text-align: left; background-color: #E7E7E7; padding-top: 8px; }
+
+td.Normal { white-space: nowrap; }
+td.HasSimilar { background-color: #F0F0FF; white-space: nowrap; }
+td.HasMismatch { background-color: #FFF0F0; white-space: nowrap; }
+td.HasOrphan { background-color: #FFF0F0; white-space: nowrap; }
+td.Added { background-color: #FFF0F0; white-space: nowrap; }
+td.Deleted { background-color: #FFF0F0; text-decoration: line-through; white-space: nowrap; }
+td.UAdded { background-color: #F0F0FF; white-space: nowrap; }
+td.UDeleted { background-color: #F0F0FF; text-decoration: line-through; white-space: nowrap; }
+
+.ttSigDiff { color: #FF0000; }
+.ttInsigDiff { color: #0000FF; }
+.ttAdded { color: #FF0000; }
+.ttDeleted { text-decoration: line-through; }
+
+/* Directory Comparison Report styles - Color */
+table.dc { border-top: 1px solid Black; border-left: 1px solid Black; width: 100%; font-family: sans-serif; font-size: 10pt; }
+
+table.dc tr.secBegin td { border-bottom: 1px solid Silver; }
+table.dc tr.secMiddle td { border-bottom: 1px solid Silver; }
+
+.ttNewer { color: #FF0000; }
+.ttOlder { color: #808080; }
+.ttOrphan { color: #0000FF; }
+.ttGhosted { color: #008080; }
+</style>
+</head><body>
+FILE COMPARISON<br />
+Produced: 14/03/2006 14:30:54<br />
+&nbsp; &nbsp;
+<br />
+Mode:&nbsp; Differences with Context &nbsp;
+<br />
+Left Side: CubeCart_3.0.9
+<br />
+Right Side: CubeCart_3.0.10
+<br />
+&nbsp; &nbsp;
+<br />
+File: admin\includes\rte\editor\filemanager\browser\default\connectors\php\connector.php &nbsp;
+<br />
+<table class="fc" cellspacing="0" cellpadding="0">
+<tr class="secBegin">
+<td class="LineNum">22</td>
+<td class="Normal">include('config.php') ;</td>
+<td class="AlignCenter">=</td>
+<td class="LineNum">22</td>
+<td class="Normal">include('config.php') ;</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">23</td>
+<td class="Normal">include('util.php') ;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">23</td>
+<td class="Normal">include('util.php') ;</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">24</td>
+<td class="Normal">include('io.php') ;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">24</td>
+<td class="Normal">include('io.php') ;</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">25</td>
+<td class="Normal">include('basexml.php') ;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">25</td>
+<td class="Normal">include('basexml.php') ;</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">26</td>
+<td class="Normal">include('commands.php') ;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">26</td>
+<td class="Normal">include('commands.php') ;</td>
+</tr>
+<tr class="secEnd">
+<td class="LineNum">27</td>
+<td class="Normal">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">27</td>
+<td class="Normal">&nbsp;</td>
+</tr>
+<tr class="secBegin">
+<td class="LineNum">&nbsp;</td>
+<td class="HasOrphan">&nbsp;</td>
+<td class="AlignCenter">&lt;&gt;</td>
+<td class="LineNum">28</td>
+<td class="HasOrphan"><span class="ttSigDiff">// Make sure admin session is present</span></td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">&nbsp;</td>
+<td class="HasOrphan">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">29</td>
+<td class="HasOrphan"><span class="ttSigDiff">include(&quot;../../../../../../../../../includes/ini.inc.php&quot;);</span></td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">&nbsp;</td>
+<td class="HasOrphan">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">30</td>
+<td class="HasOrphan"><span class="ttSigDiff">include(&quot;../../../../../../../../../includes/global.inc.php&quot;);</span></td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">&nbsp;</td>
+<td class="HasOrphan">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">31</td>
+<td class="HasOrphan"><span class="ttSigDiff">require_once(&quot;../../../../../../../../../classes/db.inc.php&quot;);</span></td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">&nbsp;</td>
+<td class="HasOrphan">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">32</td>
+<td class="HasOrphan"><span class="ttSigDiff">$db = new db();</span></td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">&nbsp;</td>
+<td class="HasOrphan">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">33</td>
+<td class="HasOrphan"><span class="ttSigDiff">include(&quot;../../../../../../../../../includes/functions.inc.php&quot;);</span></td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">&nbsp;</td>
+<td class="HasOrphan">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">34</td>
+<td class="HasOrphan"><span class="ttSigDiff">$config = fetchDbConfig(&quot;config&quot;);</span></td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">&nbsp;</td>
+<td class="HasSimilar">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">35</td>
+<td class="HasSimilar">&nbsp;</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">&nbsp;</td>
+<td class="HasOrphan">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">36</td>
+<td class="HasOrphan"><span class="ttSigDiff">include_once(&quot;../../../../../../../../../language/&quot;.$config['defaultLang'].&quot;/lang.inc.php&quot;);</span></td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">&nbsp;</td>
+<td class="HasOrphan">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">37</td>
+<td class="HasOrphan"><span class="ttSigDiff">$enableSSl = 1;</span></td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">&nbsp;</td>
+<td class="HasOrphan">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">38</td>
+<td class="HasOrphan"><span class="ttSigDiff">include_once(&quot;../../../../../../../../../includes/sslSwitch.inc.php&quot;);</span></td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">&nbsp;</td>
+<td class="HasSimilar">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">39</td>
+<td class="HasSimilar">&nbsp;</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">&nbsp;</td>
+<td class="HasOrphan">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">40</td>
+<td class="HasOrphan"><span class="ttSigDiff">include(&quot;../../../../../../../../includes/auth.inc.php&quot;); </span></td>
+</tr>
+<tr class="secEnd">
+<td class="LineNum">&nbsp;</td>
+<td class="HasSimilar">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">41</td>
+<td class="HasSimilar">&nbsp;</td>
+</tr>
+<tr class="secBegin">
+<td class="LineNum">28</td>
+<td class="Normal">// Get the &quot;UserFiles&quot; path.</td>
+<td class="AlignCenter">=</td>
+<td class="LineNum">42</td>
+<td class="Normal">// Get the &quot;UserFiles&quot; path.</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">29</td>
+<td class="Normal">$GLOBALS[&quot;UserFilesPath&quot;] = '' ;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">43</td>
+<td class="Normal">$GLOBALS[&quot;UserFilesPath&quot;] = '' ;</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">30</td>
+<td class="Normal">$GLOBALS[&quot;UserFilesPath&quot;] = $Config['UserFilesPath'];</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">44</td>
+<td class="Normal">$GLOBALS[&quot;UserFilesPath&quot;] = $Config['UserFilesPath'];</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">31</td>
+<td class="Normal">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">45</td>
+<td class="Normal">&nbsp;</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">32</td>
+<td class="Normal">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">46</td>
+<td class="Normal">&nbsp;</td>
+</tr>
+<tr class="secEnd">
+<td class="LineNum">33</td>
+<td class="Normal">// Map the &quot;UserFiles&quot; path to a local directory.</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">47</td>
+<td class="Normal">// Map the &quot;UserFiles&quot; path to a local directory.</td>
+</tr>
+</table>
+&nbsp; &nbsp;
+<br />
+File: includes\ini.inc.php &nbsp;
+<br />
+<table class="fc" cellspacing="0" cellpadding="0">
+<tr class="secBegin">
+<td class="LineNum">1</td>
+<td class="Normal">&lt;?php</td>
+<td class="AlignCenter">=</td>
+<td class="LineNum">1</td>
+<td class="Normal">&lt;?php</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">2</td>
+<td class="Normal">error_reporting(E_ALL ^ E_NOTICE);</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">2</td>
+<td class="Normal">error_reporting(E_ALL ^ E_NOTICE);</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">3</td>
+<td class="Normal">@ini_set(&quot;display_errors&quot;, &quot;1&quot;);</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">3</td>
+<td class="Normal">@ini_set(&quot;display_errors&quot;, &quot;1&quot;);</td>
+</tr>
+<tr class="secEnd">
+<td class="LineNum">4</td>
+<td class="Normal">@ini_set(&quot;arg_separator.output&quot;,&quot;&amp;amp;&quot;);</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">4</td>
+<td class="Normal">@ini_set(&quot;arg_separator.output&quot;,&quot;&amp;amp;&quot;);</td>
+</tr>
+<tr class="secBegin">
+<td class="LineNum">5</td>
+<td class="HasMismatch">$ini['ver'] = '3.0.<span class="ttSigDiff">9</span>';</td>
+<td class="AlignCenter">&lt;&gt;</td>
+<td class="LineNum">5</td>
+<td class="HasMismatch">$ini['ver'] = '3.0.<span class="ttSigDiff">1</span><span class="ttSigDiff">0</span>';</td>
+</tr>
+<tr class="secEnd">
+<td class="LineNum">6</td>
+<td class="HasMismatch">$ini['CCver'] = '3001<span class="ttSigDiff">4</span>';</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">6</td>
+<td class="HasMismatch">$ini['CCver'] = '3001<span class="ttSigDiff">5</span>';</td>
+</tr>
+<tr class="secBegin">
+<td class="LineNum">7</td>
+<td class="Normal">$sslPages = array(&quot;unsubscribe&quot; =&gt; 1,&quot;login&quot; =&gt; 1,&quot;logout&quot; =&gt; 1,&quot;forgotPass&quot; =&gt; 1,&quot;account&quot; =&gt; 1,&quot;profile&quot; =&gt; 1,&quot;changePass&quot; =&gt; 1,&quot;newsletter&quot; =&gt; 1,&quot;cart&quot; =&gt; 1,&quot;step1&quot; =&gt; 1,&quot;step2&quot; =&gt; 1,&quot;step3&quot; =&gt; 1,&quot;step4&quot; =&gt; 1,&quot;step5&quot; =&gt; 1,&quot;reg&quot; =&gt; 1,&quot;viewOrders&quot; =&gt; 1,&quot;viewOrder&quot; =&gt; 1,&quot;confirmed&quot; =&gt; 1);</td>
+<td class="AlignCenter">=</td>
+<td class="LineNum">7</td>
+<td class="Normal">$sslPages = array(&quot;unsubscribe&quot; =&gt; 1,&quot;login&quot; =&gt; 1,&quot;logout&quot; =&gt; 1,&quot;forgotPass&quot; =&gt; 1,&quot;account&quot; =&gt; 1,&quot;profile&quot; =&gt; 1,&quot;changePass&quot; =&gt; 1,&quot;newsletter&quot; =&gt; 1,&quot;cart&quot; =&gt; 1,&quot;step1&quot; =&gt; 1,&quot;step2&quot; =&gt; 1,&quot;step3&quot; =&gt; 1,&quot;step4&quot; =&gt; 1,&quot;step5&quot; =&gt; 1,&quot;reg&quot; =&gt; 1,&quot;viewOrders&quot; =&gt; 1,&quot;viewOrder&quot; =&gt; 1,&quot;confirmed&quot; =&gt; 1);</td>
+</tr>
+<tr class="secEnd">
+<td class="LineNum">8</td>
+<td class="Normal">?&gt;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">8</td>
+<td class="Normal">?&gt;</td>
+</tr>
+</table>
+&nbsp; &nbsp;
+<br />
+File: modules\gateway\DirectPayment\form.inc.php &nbsp;
+<br />
+<table class="fc" cellspacing="0" cellpadding="0">
+<tr class="secBegin">
+<td class="LineNum">119</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $shippingTotal =&amp; Services_PayPal::getType('BasicAmountType');</td>
+<td class="AlignCenter">=</td>
+<td class="LineNum">119</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $shippingTotal =&amp; Services_PayPal::getType('BasicAmountType');</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">120</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $shippingTotal-&gt;setval(number_format($shippingAmount, 2));</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">120</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $shippingTotal-&gt;setval(number_format($shippingAmount, 2));</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">121</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $shippingTotal-&gt;setattr('currencyID', $currencyID); // USD</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">121</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $shippingTotal-&gt;setattr('currencyID', $currencyID); // USD</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">122</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $pdt-&gt;setShippingTotal($shippingTotal);</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">122</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $pdt-&gt;setShippingTotal($shippingTotal);</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">123</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">123</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</td>
+</tr>
+<tr class="secEnd">
+<td class="LineNum">124</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">124</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+</tr>
+<tr class="secBegin">
+<td class="LineNum">&nbsp;</td>
+<td class="HasOrphan">&nbsp;</td>
+<td class="AlignCenter">&lt;&gt;</td>
+<td class="LineNum">125</td>
+<td class="HasOrphan"><span class="ttSigDiff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // START - adding info for shipping address</span></td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">&nbsp;</td>
+<td class="HasOrphan">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">126</td>
+<td class="HasOrphan"><span class="ttSigDiff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $shipAddress =&amp; Services_PayPal::getType('AddressType');</span></td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">&nbsp;</td>
+<td class="HasOrphan">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">127</td>
+<td class="HasOrphan"><span class="ttSigDiff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $shipAddress-&gt;setName($basket['delInf']['firstName'].&quot;</span></td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">&nbsp;</td>
+<td class="HasOrphan">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">128</td>
+<td class="HasOrphan"><span class="ttSigDiff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;.$basket['delInf']['lastName']);</span></td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">&nbsp;</td>
+<td class="HasOrphan">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">129</td>
+<td class="HasOrphan"><span class="ttSigDiff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $shipAddress-&gt;setStreet1($basket['delInf']['add_1']);</span></td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">&nbsp;</td>
+<td class="HasOrphan">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">130</td>
+<td class="HasOrphan"><span class="ttSigDiff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $shipAddress-&gt;setStreet2($basket['delInf']['add_2']);</span></td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">&nbsp;</td>
+<td class="HasOrphan">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">131</td>
+<td class="HasOrphan"><span class="ttSigDiff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $shipAddress-&gt;setCityName($basket['delInf']['town']);</span></td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">&nbsp;</td>
+<td class="HasOrphan">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">132</td>
+<td class="HasOrphan"><span class="ttSigDiff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $shipAddress-&gt;setStateOrProvince($basket['delInf']['county']);</span></td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">&nbsp;</td>
+<td class="HasOrphan">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">133</td>
+<td class="HasOrphan"><span class="ttSigDiff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $shipAddress-&gt;setCountry(countryIso($basket['delInf']['country']));</span></td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">&nbsp;</td>
+<td class="HasOrphan">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">134</td>
+<td class="HasOrphan"><span class="ttSigDiff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $shipAddress-&gt;setPostalCode($basket['delInf']['postcode']);</span></td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">&nbsp;</td>
+<td class="HasOrphan">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">135</td>
+<td class="HasOrphan"><span class="ttSigDiff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $pdt-&gt;setShipToAddress($shipAddress);</span></td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">&nbsp;</td>
+<td class="HasOrphan">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">136</td>
+<td class="HasOrphan"><span class="ttSigDiff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // END - adding info for shipping address</span></td>
+</tr>
+<tr class="secEnd">
+<td class="LineNum">&nbsp;</td>
+<td class="HasSimilar">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">137</td>
+<td class="HasSimilar">&nbsp;</td>
+</tr>
+<tr class="secBegin">
+<td class="LineNum">125</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //$pdt-&gt;setOrderDescription($productName);</td>
+<td class="AlignCenter">=</td>
+<td class="LineNum">138</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //$pdt-&gt;setOrderDescription($productName);</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">126</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $pdt-&gt;setInvoiceID($orderID);</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">139</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $pdt-&gt;setInvoiceID($orderID);</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">127</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">140</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">128</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $details =&amp; Services_PayPal::getType('DoDirectPaymentRequestDetailsType');</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">141</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $details =&amp; Services_PayPal::getType('DoDirectPaymentRequestDetailsType');</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">129</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $details-&gt;setPaymentAction(&quot;Sale&quot;);</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">142</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $details-&gt;setPaymentAction(&quot;Sale&quot;);</td>
+</tr>
+<tr class="secEnd">
+<td class="LineNum">130</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $details-&gt;setPaymentDetails($pdt);</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">143</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $details-&gt;setPaymentDetails($pdt);</td>
+</tr>
+</table>
+&nbsp; &nbsp;
+<br />
+File: modules\gateway\PayJunction\transfer.inc.php &nbsp;
+<br />
+<table class="fc" cellspacing="0" cellpadding="0">
+<tr class="secBegin">
+<td class="LineNum">81</td>
+<td class="Normal">$basket['grandTotal']&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Basket total which has to be paid (inc Tax and Shipping).</td>
+<td class="AlignCenter">=</td>
+<td class="LineNum">81</td>
+<td class="Normal">$basket['grandTotal']&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Basket total which has to be paid (inc Tax and Shipping).</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">82</td>
+<td class="Normal">$basket['tax']&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Total tax to pay</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">82</td>
+<td class="Normal">$basket['tax']&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Total tax to pay</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">83</td>
+<td class="Normal">$basket['shipCost']&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Shipping price</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">83</td>
+<td class="Normal">$basket['shipCost']&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Shipping price</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">84</td>
+<td class="Normal">////////////////////////////////////////////////////////</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">84</td>
+<td class="Normal">////////////////////////////////////////////////////////</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">85</td>
+<td class="Normal">*/</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">85</td>
+<td class="Normal">*/</td>
+</tr>
+<tr class="secEnd">
+<td class="LineNum">86</td>
+<td class="Normal">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">86</td>
+<td class="Normal">&nbsp;</td>
+</tr>
+<tr class="secAll">
+<td class="LineNum">87</td>
+<td class="HasMismatch">$module = fetchDbConfig(&quot;<span class="ttSigDiff">e</span><span class="ttSigDiff">W</span>ay&quot;);</td>
+<td class="AlignCenter">&lt;&gt;</td>
+<td class="LineNum">87</td>
+<td class="HasMismatch">$module = fetchDbConfig(&quot;<span class="ttSigDiff">P</span>ay<span class="ttSigDiff">Junction</span>&quot;);</td>
+</tr>
+<tr class="secBegin">
+<td class="LineNum">88</td>
+<td class="Normal">&nbsp;</td>
+<td class="AlignCenter">=</td>
+<td class="LineNum">88</td>
+<td class="Normal">&nbsp;</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">89</td>
+<td class="Normal">function repeatVars(){</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">89</td>
+<td class="Normal">function repeatVars(){</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">90</td>
+<td class="Normal">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">90</td>
+<td class="Normal">&nbsp;</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">91</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return FALSE;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">91</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return FALSE;</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">92</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">92</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+</tr>
+<tr class="secEnd">
+<td class="LineNum">93</td>
+<td class="Normal">}</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">93</td>
+<td class="Normal">}</td>
+</tr>
+</table>
+&nbsp; &nbsp;
+<br />
+File: extra\prodImages.php &nbsp;
+<br />
+<table class="fc" cellspacing="0" cellpadding="0">
+<tr class="secEnd">
+<td class="LineNum">41</td>
+<td class="Normal">// get session data</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">41</td>
+<td class="Normal">// get session data</td>
+</tr>
+<tr class="secAll">
+<td class="LineNum">&nbsp;</td>
+<td class="HasOrphan">&nbsp;</td>
+<td class="AlignCenter">-+</td>
+<td class="LineNum">42</td>
+<td class="HasOrphan"><span class="ttSigDiff">include_once(&quot;../includes/sessionStart.inc.php&quot;);</span></td>
+</tr>
+<tr class="secBegin">
+<td class="LineNum">42</td>
+<td class="Normal">include_once(&quot;../includes/session.inc.php&quot;);</td>
+<td class="AlignCenter">=</td>
+<td class="LineNum">43</td>
+<td class="Normal">include_once(&quot;../includes/session.inc.php&quot;);</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">43</td>
+<td class="Normal">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">44</td>
+<td class="Normal">&nbsp;</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">44</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $lang_folder = &quot;&quot;;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">45</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $lang_folder = &quot;&quot;;</td>
+</tr>
+</table>
+</body></html>

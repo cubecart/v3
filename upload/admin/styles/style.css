@@ -1,0 +1,204 @@
+/* DEFAULT CUBECART 3 ADMIN STYLE SHEET */
+body {
+	background-color: #FFFFFF;
+	margin: 6px;
+}
+
+#loginBar {
+	position: absolute;
+	left: 185px;
+	top: 6px;
+	padding-bottom: 4px;
+	padding-left: 8px;
+	height: 20px;
+}
+#dateBar {
+	position: absolute;
+	right: 7px;
+	top: 6px;
+	padding-bottom: 4px;
+	padding-left: 8px;
+	height: 20px;
+	text-align: right;
+}
+.tdContent {
+	background-color: #EAEAEA;
+}
+.tdNav {
+	border-right: 1px solid #999999;
+}
+.navMenu {
+	padding-left: 13px;
+}
+#topBar {
+	border-bottom: 1px solid #999999;
+	height: 20px;
+	background-color: #FFFFFF;
+}
+#contentPad {
+	padding: 6px;
+}
+
+.mainTable {
+	border: 1px solid #050F72;
+	background-color: #EFEFDE
+}
+.tdTitle {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+	background-color: #050F72;
+	font-weight: bold;
+}
+.tdEven {
+	background-color: #E7E9FE;
+}
+.tdOdd {
+	background-color: #FFFFFF;
+}
+.tdText {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+}
+.tdRichText {
+	background-color: #EFEFDE;
+}
+.copyText {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+}
+a.txtLink:visited, a.txtLink:link, a.txtLink:active {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #050F72;
+	text-decoration: none;
+}
+a.txtLink:hover {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FF9900;
+	text-decoration: none;
+}
+a.txtNullLink:visited, a.txtNullLink:link, a.txtNullLink:active {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #CCCCCC;
+	text-decoration: none;
+}
+.textbox {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #000000;
+	font-size: 12px;
+	background-color: #FFFFFF;
+	border: 1px solid #A5ACB2;
+}
+.submit {
+	background-color: #0B70CE;
+	border: 1px solid #000000;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+.infoText {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 85%;
+	font-weight: bold;
+	color: #050F72;
+	background-color: #CEDFFF;
+	border: 1px solid #050F72;
+	padding: 2px;
+}
+.warnText {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 85%;
+	font-weight: bold;
+	color: #050F72;
+	background-color: #FFCECE;
+	border: 1px solid #FF0000;
+	padding: 2px;
+}
+a.copyright:hover, a.copyright:visited, a.copyright:link, a.copyright:active {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #666666;
+	text-decoration: none;
+}
+.pageTitle {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #0B70CE;
+	font-weight: bold;
+}
+.noPad {
+	padding: 0px;
+}
+
+.txtLogin {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+}
+li {
+	list-style-type: square;
+	list-style-position: inside;
+}
+.navTitle {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #0B70CE;
+}
+ul {
+	padding: 0;
+	margin: 0;
+}
+form {
+	margin: 0px;
+	padding: 0px;
+}
+.txtDir {
+	font-family: "Courier New", Courier, mono;
+	font-size: 12px;
+	color: #000000;
+	text-decoration: none;
+}
+.txtRed {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FF0000;
+	text-decoration: none;
+}
+.imgPreview {
+	background-color: #000000;
+	border: 1px solid #000000;
+}
+.greyBg {
+	background-color: #CCCCCC;
+}
+.hiddenTextbox {
+	width: 1px;
+	border: none;
+	background-color: #EFEFDE;
+}
+.dirTextbox {
+	font-family: "Courier New", Courier, mono;
+	font-size: 12px;
+	color: #000000;
+	background-color: #FFFFFF;
+	border: 1px solid #A5ACB2;
+	width: 75%
+}
+.subHead {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #FFFFFF;
+	background-color: #999999;
+	border-bottom: 1px solid #666666;	
+}
+.btmSubNav {
+	border-top: 1px solid #666666;
+}

@@ -1,0 +1,436 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style>
+.AlignLeft { text-align: left; }
+.AlignCenter { text-align: center; }
+.AlignRight { text-align: right; }
+body { font-family: sans-serif; font-size: 11pt; }
+td { vertical-align: top; padding-left: 4px; padding-right: 4px; }
+
+tr.SectionGap td { font-size: 4px; border-left: none; border-top: none; border-bottom: 1px solid Black; border-right: 1px solid Black; }
+tr.SectionAll td { border-left: none; border-top: none; border-bottom: 1px solid Black; border-right: 1px solid Black; }
+tr.SectionBegin td { border-left: none; border-top: none; border-right: 1px solid Black; }
+tr.SectionEnd td { border-left: none; border-top: none; border-bottom: 1px solid Black; border-right: 1px solid Black; }
+tr.SectionMiddle td { border-left: none; border-top: none; border-right: 1px solid Black; }
+tr.SubsectionAll td { border-left: none; border-top: none; border-bottom: 1px solid Gray; border-right: 1px solid Black; }
+tr.SubsectionEnd td { border-left: none; border-top: none; border-bottom: 1px solid Gray; border-right: 1px solid Black; }
+table.fc { border-top: 1px solid Black; border-left: 1px solid Black; width: 100%; font-family: monospace; font-size: 10pt; }
+td.TextLineInsigAdd { background-color: #EFEFFF; }
+td.TextLineInsigDel { background-color: #EFEFFF; text-decoration: line-through; }
+td.TextLineInsigDiffMod { background-color: #EFEFFF; }
+td.TextLineInsigLeftMod { background-color: #EFEFFF; }
+td.TextLineInsigRightMod { background-color: #EFEFFF; }
+td.TextLineNum { color: #827357; background-color: #F2F2F2; }
+td.TextLineSigAdd { background-color: #FFE3E3; }
+td.TextLineSigDel { background-color: #FFE3E3; text-decoration: line-through; }
+td.TextLineSigDiffMod { background-color: #FFE3E3; }
+td.TextLineSigLeftMod { background-color: #FFE3E3; }
+td.TextLineSigRightMod { background-color: #FFE3E3; }
+.TextSegInsigDiff { color: #0000FF; }
+.TextSegReplacedDiff { color: #0000FF; font-style: italic; }
+.TextSegSigDiff { color: #FF0000; }
+</style>
+</head>
+<body>
+3.0.19 compared to 3.0.20<br/>
+Produced: 03/08/2009 14:07:44<br/>
+&nbsp; &nbsp;
+<br/>
+Mode:&nbsp; Differences &nbsp;
+<br/>
+Left: CubeCart_3.0.19 &nbsp;
+<br/>
+Right: CubeCart_3.0.20 &nbsp;
+<br/>
+&nbsp; &nbsp;
+<br/>
+File: modules\gateway\PayPal\transfer.inc.php &nbsp;
+<br/>
+<table class="fc" cellspacing="0" cellpadding="0">
+<tr class="SectionBegin">
+<td class="TextLineInsigLeftMod"><span class="TextSegInsigDiff">&nbsp; &nbsp; &nbsp; &nbsp; </span></td>
+<td class="AlignCenter">+-</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextLineSigLeftMod"><span class="TextSegInsigDiff">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">if($module['method']==&quot;std&quot;){</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="SectionGap"><td colspan="3">&nbsp;</td></tr>
+<tr class="SectionBegin">
+<td class="TextLineSigLeftMod"><span class="TextSegInsigDiff">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">if(</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">(base64_decode($_GET['oid'])</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">==</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">$basket['cart_order_id'])</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">&amp;&amp;</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">!isset($_GET['f'])</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">)</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">{</span></td>
+<td class="AlignCenter">&lt;&gt;</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextLineInsigLeftMod"><span class="TextSegInsigDiff">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextLineSigLeftMod"><span class="TextSegInsigDiff">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">return</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">TRUE;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextLineInsigLeftMod"><span class="TextSegInsigDiff">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextLineSigLeftMod"><span class="TextSegInsigDiff">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">}</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">else{</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextLineInsigLeftMod"><span class="TextSegInsigDiff">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextLineSigLeftMod"><span class="TextSegInsigDiff">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">return</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">FALSE;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextLineInsigLeftMod"><span class="TextSegInsigDiff">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextLineSigLeftMod"><span class="TextSegInsigDiff">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">}</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextLineInsigLeftMod"><span class="TextSegInsigDiff">&nbsp; &nbsp; &nbsp; &nbsp; </span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextLineSigLeftMod"><span class="TextSegInsigDiff">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">}</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">elseif($module['method']==&quot;ipn&quot;)</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">{</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextLineInsigDiffMod">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegInsigDiff">&nbsp; &nbsp; &nbsp; &nbsp; </span>############################################################################################</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextLineInsigDiffMod">&nbsp; &nbsp; &nbsp; &nbsp; ############################################################################################</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextLineInsigDiffMod">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegInsigDiff">&nbsp; &nbsp; &nbsp; &nbsp; </span>// Following line updated for Sir William's PayPal AutoReturn Fix</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextLineInsigDiffMod">&nbsp; &nbsp; &nbsp; &nbsp; // Following line updated for Sir William's PayPal AutoReturn Fix</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextLineInsigDiffMod">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegInsigDiff">&nbsp; &nbsp; &nbsp; &nbsp; </span>// $result = $db-&gt;select(&quot;SELECT status&nbsp; FROM &quot;.$glob['dbprefix'].&quot;CubeCart_order_sum WHERE cart_order_id = &quot;.$db-&gt;mySQLSafe($basket['cart_order_id']) );</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextLineInsigDiffMod">&nbsp; &nbsp; &nbsp; &nbsp; // $result = $db-&gt;select(&quot;SELECT status&nbsp; FROM &quot;.$glob['dbprefix'].&quot;CubeCart_order_sum WHERE cart_order_id = &quot;.$db-&gt;mySQLSafe($basket['cart_order_id']) );</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextLineInsigDiffMod">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegInsigDiff">&nbsp; &nbsp; &nbsp; &nbsp; </span>$result = $db-&gt;select(&quot;SELECT status&nbsp; FROM &quot;.$glob['dbprefix'].&quot;CubeCart_order_sum WHERE sec_order_id = &quot;.$db-&gt;mySQLSafe($_GET['tx']) );</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextLineInsigDiffMod">&nbsp; &nbsp; &nbsp; &nbsp; $result = $db-&gt;select(&quot;SELECT status&nbsp; FROM &quot;.$glob['dbprefix'].&quot;CubeCart_order_sum WHERE sec_order_id = &quot;.$db-&gt;mySQLSafe($_GET['tx']) );</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextLineInsigDiffMod">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegInsigDiff">&nbsp; &nbsp; &nbsp; &nbsp; </span>############################################################################################</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextLineInsigDiffMod">&nbsp; &nbsp; &nbsp; &nbsp; ############################################################################################</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextLineInsigDiffMod">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegInsigDiff">&nbsp; &nbsp; &nbsp; &nbsp; </span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextLineInsigDiffMod">&nbsp; &nbsp; &nbsp; &nbsp; </td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextLineInsigDiffMod">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegInsigDiff">&nbsp; &nbsp; &nbsp; &nbsp; </span>if($result[0]['status']==2){</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextLineInsigDiffMod">&nbsp; &nbsp; &nbsp; &nbsp; if($result[0]['status']==2){</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextLineInsigDiffMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegInsigDiff">&nbsp; &nbsp; &nbsp; &nbsp; </span>return TRUE;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextLineInsigDiffMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return TRUE;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextLineInsigDiffMod">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegInsigDiff">&nbsp; &nbsp; &nbsp; &nbsp; </span>} else {</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextLineInsigDiffMod">&nbsp; &nbsp; &nbsp; &nbsp; } else {</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextLineInsigDiffMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegInsigDiff">&nbsp; &nbsp; &nbsp; &nbsp; </span>return FALSE;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextLineInsigDiffMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return FALSE;</td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextLineInsigDiffMod">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegInsigDiff">&nbsp; &nbsp; &nbsp; &nbsp; </span>}&nbsp; &nbsp; &nbsp;&nbsp; </td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextLineInsigDiffMod">&nbsp; &nbsp; &nbsp; &nbsp; }&nbsp; &nbsp; &nbsp;&nbsp; </td>
+</tr>
+<tr class="SectionGap"><td colspan="3">&nbsp;</td></tr>
+<tr class="SectionBegin">
+<td class="TextLineSigLeftMod"><span class="TextSegInsigDiff">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">}</span></td>
+<td class="AlignCenter">+-</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextLineInsigLeftMod">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="SectionGap"><td colspan="3">&nbsp;</td></tr>
+<tr class="SectionBegin">
+<td class="TextLineInsigLeftMod">&nbsp;</td>
+<td class="AlignCenter">&lt;&gt;</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextLineSigLeftMod"><span class="TextSegSigDiff">if($module['method']==&quot;std&quot;){</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextLineInsigLeftMod">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextLineInsigDiffMod"><span class="TextSegInsigDiff">&nbsp; &nbsp; &nbsp; &nbsp; </span>$transfer = &quot;auto&quot;;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextLineInsigDiffMod">$transfer = &quot;auto&quot;;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextLineSigLeftMod"><span class="TextSegInsigDiff">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">$stateUpdate</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">=</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">TRUE;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextLineInsigLeftMod"><span class="TextSegInsigDiff">&nbsp; &nbsp; &nbsp; &nbsp; </span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextLineInsigLeftMod">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextLineSigLeftMod"><span class="TextSegSigDiff">}</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">else</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">{</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextLineInsigLeftMod">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextLineSigLeftMod"><span class="TextSegInsigDiff">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">$transfer</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">=</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">&quot;auto&quot;;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextLineInsigDiffMod"><span class="TextSegInsigDiff">&nbsp; &nbsp; &nbsp; &nbsp; </span>$stateUpdate = FALSE;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextLineInsigDiffMod">$stateUpdate = FALSE;</td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextLineSigLeftMod"><span class="TextSegSigDiff">}</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+&nbsp; &nbsp;
+<br/>
+File: includes\boxes\shoppingCart.inc.php &nbsp;
+<br/>
+<table class="fc" cellspacing="0" cellpadding="0">
+<tr class="SectionAll">
+<td class="TextLineSigDiffMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; $option = $db-&gt;select(&quot;SELECT &quot;.$glob['dbprefix'].&quot;CubeCart_options_bot.option_id, &quot;.$glob['dbprefix'].&quot;CubeCart_options_bot.value_id, option_price, option_symbol, assign_id FROM `&quot;.$glob['dbprefix'].&quot;CubeCart_options_bot` INNER JOIN `&quot;.$glob['dbprefix'].&quot;CubeCart_options_mid` ON &quot;.$glob['dbprefix'].&quot;CubeCart_options_mid.value_id = &quot;.$glob['dbprefix'].&quot;CubeCart_options_bot.value_id INNER JOIN `&quot;.$glob['dbprefix'].&quot;CubeCart_options_top` ON &quot;.$glob['dbprefix'].&quot;CubeCart_options_bot.option_id = &quot;.$glob['dbprefix'].&quot;CubeCart_options_top.option_id WHERE assign_id = &quot;.$value);</td>
+<td class="AlignCenter">&lt;&gt;</td>
+<td class="TextLineSigDiffMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; $option = $db-&gt;select(&quot;SELECT &quot;.$glob['dbprefix'].&quot;CubeCart_options_bot.option_id, &quot;.$glob['dbprefix'].&quot;CubeCart_options_bot.value_id, option_price, option_symbol, assign_id FROM `&quot;.$glob['dbprefix'].&quot;CubeCart_options_bot` INNER JOIN `&quot;.$glob['dbprefix'].&quot;CubeCart_options_mid` ON &quot;.$glob['dbprefix'].&quot;CubeCart_options_mid.value_id = &quot;.$glob['dbprefix'].&quot;CubeCart_options_bot.value_id INNER JOIN `&quot;.$glob['dbprefix'].&quot;CubeCart_options_top` ON &quot;.$glob['dbprefix'].&quot;CubeCart_options_bot.option_id = &quot;.$glob['dbprefix'].&quot;CubeCart_options_top.option_id WHERE assign_id = &quot;.$<span class="TextSegSigDiff">db-&gt;mySQLSafe($</span>value<span class="TextSegSigDiff">)</span>);</td>
+</tr>
+</table>
+&nbsp; &nbsp;
+<br/>
+File: includes\ini.inc.php &nbsp;
+<br/>
+<table class="fc" cellspacing="0" cellpadding="0">
+<tr class="SectionBegin">
+<td class="TextLineSigDiffMod">$ini['ver'] = '3.0.<span class="TextSegSigDiff">19</span>';</td>
+<td class="AlignCenter">&lt;&gt;</td>
+<td class="TextLineSigDiffMod">$ini['ver'] = '3.0.<span class="TextSegSigDiff">20</span>';</td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextLineSigDiffMod">$ini['CCver'] = '3002<span class="TextSegSigDiff">4</span>';</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextLineSigDiffMod">$ini['CCver'] = '3002<span class="TextSegSigDiff">5</span>';</td>
+</tr>
+</table>
+&nbsp; &nbsp;
+<br/>
+File: admin\settings\index.php &nbsp;
+<br/>
+<table class="fc" cellspacing="0" cellpadding="0">
+<tr class="SectionBegin">
+<td>&nbsp;</td>
+<td class="AlignCenter">-+</td>
+<td class="TextLineSigRightMod"><span class="TextSegInsigDiff">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">&lt;tr&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td>&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextLineSigRightMod"><span class="TextSegInsigDiff">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">&lt;td</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">width=&quot;30%&quot;</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">class=&quot;tdText&quot;&gt;&lt;strong&gt;RSS</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">to</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">Dashboard</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">Newsfeed:&lt;/strong&gt;&lt;/td&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td>&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextLineSigRightMod"><span class="TextSegInsigDiff">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">&lt;td</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">align=&quot;left&quot;&gt;&lt;input</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">type=&quot;text&quot;</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">class=&quot;textbox&quot;</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">size=&quot;30&quot;</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">name=&quot;config[rssURL]&quot;</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">value=&quot;&lt;?php</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">if(!isset($config['rssURL']))</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">{</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">echo</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">&quot;http://forums.cubecart.com/index.php?act=rssout&amp;id=1&quot;;</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">}</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">else</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">{</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">echo</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">$config['rssURL'];</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">}</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">?&gt;&quot;</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">/&gt;&lt;/td&gt;</span></td>
+</tr>
+<tr class="SectionEnd">
+<td>&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextLineSigRightMod"><span class="TextSegInsigDiff">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">&lt;/tr&gt;</span></td>
+</tr>
+</table>
+&nbsp; &nbsp;
+<br/>
+File: admin\index.php &nbsp;
+<br/>
+<table class="fc" cellspacing="0" cellpadding="0">
+<tr class="SectionBegin">
+<td>&nbsp;</td>
+<td class="AlignCenter">&lt;&gt;</td>
+<td class="TextLineSigRightMod"><span class="TextSegSigDiff">&lt;?php</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td>&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextLineSigRightMod"><span class="TextSegSigDiff">include('../classes/rss_fetch.inc');</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td>&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextLineSigRightMod"><span class="TextSegSigDiff">if(!isset($config['rssURL']))</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">{</span><span class="TextSegInsigDiff"> </span></td>
+</tr>
+<tr class="SectionMiddle">
+<td>&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextLineSigRightMod"><span class="TextSegInsigDiff">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">$config['rssURL']</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">=</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">&quot;http://forums.cubecart.com/index.php?act=rssout&amp;id=1&quot;;</span><span class="TextSegInsigDiff"> </span></td>
+</tr>
+<tr class="SectionMiddle">
+<td>&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextLineSigRightMod"><span class="TextSegSigDiff">}</span><span class="TextSegInsigDiff"> </span></td>
+</tr>
+<tr class="SectionMiddle">
+<td>&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextLineSigRightMod"><span class="TextSegSigDiff">if(!empty($config['rssURL']))</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td>&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextLineSigRightMod"><span class="TextSegSigDiff">$rss</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">=</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">fetch_rss(</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">$config['rssURL']</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td>&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextLineSigRightMod"><span class="TextSegSigDiff">?&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td>&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextLineSigRightMod"><span class="TextSegSigDiff">&lt;br</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">/&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td>&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextLineSigRightMod"><span class="TextSegSigDiff">&lt;table</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">width=&quot;100%&quot;</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">border=&quot;0&quot;</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">cellpadding=&quot;4&quot;</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">cellspacing=&quot;0&quot;</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">class=&quot;mainTable&quot;&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td>&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextLineSigRightMod"><span class="TextSegInsigDiff">&nbsp; </span><span class="TextSegSigDiff">&lt;tr&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td>&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextLineSigRightMod"><span class="TextSegInsigDiff">&nbsp; &nbsp; </span><span class="TextSegSigDiff">&lt;td</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">class=&quot;tdTitle&quot;&gt;&lt;?php</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">echo</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">$rss-&gt;channel['title'];</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">?&gt;&lt;/td&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td>&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextLineSigRightMod"><span class="TextSegInsigDiff">&nbsp; </span><span class="TextSegSigDiff">&lt;/tr&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td>&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextLineSigRightMod"><span class="TextSegInsigDiff">&nbsp; </span><span class="TextSegSigDiff">&lt;?php</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td>&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextLineSigRightMod"><span class="TextSegInsigDiff">&nbsp; </span><span class="TextSegSigDiff">foreach</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">($rss-&gt;items</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">as</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">$item)</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td>&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextLineSigRightMod"><span class="TextSegInsigDiff">&nbsp; </span><span class="TextSegSigDiff">?&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td>&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextLineSigRightMod"><span class="TextSegInsigDiff">&nbsp; </span><span class="TextSegSigDiff">&lt;tr&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td>&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextLineSigRightMod"><span class="TextSegInsigDiff">&nbsp; &nbsp; </span><span class="TextSegSigDiff">&lt;td&gt;&lt;?php</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">echo</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">&quot;&lt;a</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">href=&quot;.$item['link'].&quot;</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">class='txtLink'&gt;&quot;.$item['title'].&quot;&lt;/a&gt;&quot;;</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">?&gt;&lt;/td&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td>&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextLineSigRightMod"><span class="TextSegInsigDiff">&nbsp; </span><span class="TextSegSigDiff">&lt;/tr&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td>&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextLineSigRightMod"><span class="TextSegInsigDiff">&nbsp; </span><span class="TextSegSigDiff">&lt;?php</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td>&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextLineSigRightMod"><span class="TextSegInsigDiff">&nbsp; </span><span class="TextSegSigDiff">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td>&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextLineSigRightMod"><span class="TextSegInsigDiff">&nbsp; </span><span class="TextSegSigDiff">?&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td>&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextLineSigRightMod"><span class="TextSegSigDiff">&lt;/table&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td>&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextLineSigRightMod"><span class="TextSegSigDiff">&lt;?php</span><span class="TextSegInsigDiff"> </span></td>
+</tr>
+<tr class="SectionMiddle">
+<td>&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextLineSigRightMod"><span class="TextSegSigDiff">}</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextLineSigDiffMod"><span class="TextSegSigDiff">&lt;?php</span><span class="TextSegInsigDiff"> </span>if(!isset($config['lk'])) { ?&gt;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextLineSigDiffMod">if(!isset($config['lk'])) { ?&gt;</td>
+</tr>
+</table>
+</body>
+</html>
